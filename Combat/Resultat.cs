@@ -1,7 +1,4 @@
 ﻿using CombatCavallers.Lluitador;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CombatCavallers.Combat
 {
@@ -12,7 +9,7 @@ namespace CombatCavallers.Combat
     class Resultat : ICombatents
     {
         public ILluitador Lluitador { get; }
-        public string Nom => Lluitador.Nom; 
+        public string Nom => Lluitador.Nom;
         public int Vida { get; private set; }
 
         public Resultat(ILluitador lluitador, int vida)

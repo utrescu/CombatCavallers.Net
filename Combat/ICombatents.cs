@@ -1,8 +1,4 @@
 ﻿using CombatCavallers.Lluitador;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 
 namespace CombatCavallers.Combat
 {

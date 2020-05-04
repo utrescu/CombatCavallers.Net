@@ -3,7 +3,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CombatCavallers.Combat
 {
@@ -45,13 +44,13 @@ namespace CombatCavallers.Combat
                 return null;
             }
 
-            
+
             var elQuePica = _rnd.Next(2);
             _logger.LogInformation($"Sorteig de qui comença: .... {_Lluitadors[elQuePica].Nom}");
 
             while (_Lluitadors.All(l => l.EsKo() == false))
             {
-                var elQueRep = (elQuePica+1) % 2;
+                var elQueRep = (elQuePica + 1) % 2;
                 var proteccio = _Lluitadors[elQueRep].Lluitador.Protegeix();
                 var pica = _Lluitadors[elQuePica].Lluitador.Pica();
 
@@ -73,7 +72,7 @@ namespace CombatCavallers.Combat
             var guanyador = _Lluitadors.First(l => l.EsKo() == false);
             var perdedor = _Lluitadors.First(l => l.EsKo() == true);
 
-            var comentariLocutor = (guanyador.Vida - perdedor.Vida) > 5 ? "Quina Pallissa!!": "";
+            var comentariLocutor = (guanyador.Vida - perdedor.Vida) > 5 ? "Quina Pallissa!!" : "";
 
             _logger.LogInformation($"{perdedor.Nom} cau a terra!");
             _logger.LogInformation($"VICTÒRIA DE {guanyador.Nom}!!! {comentariLocutor}");

@@ -25,7 +25,7 @@ namespace CombatCavallers
             ring.EntradaLluitadors(lluitador1, lluitador2);
             var resultats = ring.Lluiteu();
 
-            
+
             // Tancar logger
             serviceProvider.Dispose();
 

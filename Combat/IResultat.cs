@@ -1,9 +1,4 @@
-﻿using CombatCavallers.Lluitador;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CombatCavallers.Combat
+﻿namespace CombatCavallers.Combat
 {
     /// <summary>
     /// Resultat del combat entre dos lluitadors
@@ -13,8 +8,8 @@ namespace CombatCavallers.Combat
         /// <summary>
         /// Nom del lluitador
         /// </summary>
-        string Nom { get; }  
-        
+        string Nom { get; }
+
         /// <summary>
         /// Vida del lluitador
         /// </summary>
