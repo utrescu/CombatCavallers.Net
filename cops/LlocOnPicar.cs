@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CombatCavallers
+namespace CombatCavallers.cops
 {
     /// <summary>
     /// Llocs en els que pot picar un Combatent
@@ -10,7 +10,7 @@ namespace CombatCavallers
     public enum LlocOnPicar
     {
         Cap = 0,
-        CostatEsquerra = 1, 
+        CostatEsquerra = 1,
         CostatDret = 2,
         Panxa = 3
     }

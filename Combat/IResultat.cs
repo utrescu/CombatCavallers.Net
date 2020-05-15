@@ -18,7 +18,7 @@
         /// <summary>
         /// Determina si el Lluitador està derrotat
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna si el lluitador està KO o no</returns>
         bool EsKo();
     }
 }

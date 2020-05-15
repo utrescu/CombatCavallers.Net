@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CombatCavallers.cops;
 
 namespace CombatCavallers.Lluitador
 {
