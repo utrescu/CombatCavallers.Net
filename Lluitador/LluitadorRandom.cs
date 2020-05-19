@@ -16,10 +16,13 @@ namespace CombatCavallers.Lluitador
         public LluitadorRandom(string nom)
         {
             rnd = new Random(Guid.NewGuid().GetHashCode());
+            Pes = 0;
             Nom = nom;
         }
 
         public string Nom { get; }
+
+        public int Pes { get; set; }
 
         public LlocOnPicar Pica()
         {
