@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace CombatCavallers.Combat
 {
-    public class Ring
+    public class Ring : IRing
     {
         private const int VidaInicialDelsCombatents = 20;
 

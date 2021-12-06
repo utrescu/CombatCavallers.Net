@@ -15,7 +15,7 @@ namespace CombatCavallers
             ConfigureServices(serviceCollection);
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var ring = serviceProvider.GetService<Ring>();
+            var ring = serviceProvider.GetService<IRing>();
 
             // Comença la lluita
 
@@ -45,7 +45,7 @@ namespace CombatCavallers
                 options.TimestampFormat = "mm:ss";
             }))
                 .Configure<LoggerFilterOptions>(options => options.MinLevel = LogLevel.Information)
-                .AddTransient<Ring>();
+                .AddTransient<IRing, Ring>();
 
         }
     }
