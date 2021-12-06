@@ -39,9 +39,10 @@ namespace CombatCavallers
 
         private static void ConfigureServices(ServiceCollection serviceCollection)
         {
-            serviceCollection.AddLogging(configure => configure.AddConsole(options =>
+            serviceCollection.AddLogging(configure => configure.AddSimpleConsole(options =>
             {
-                options.Format = ConsoleLoggerFormat.Systemd;
+                options.SingleLine = true;
+                options.TimestampFormat = "mm:ss";
             }))
                 .Configure<LoggerFilterOptions>(options => options.MinLevel = LogLevel.Information)
                 .AddTransient<Ring>();
